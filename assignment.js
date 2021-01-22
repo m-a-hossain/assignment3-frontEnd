@@ -1,6 +1,6 @@
-
-// problem1
-/* function kilometerToMeter(km){
+// 
+// problem1 -----------------------------------------------------
+ function kilometerToMeter(km){
         var meter =1000;
         if(km < 0 || km ==""){ // making stop for negative input
           return -1
@@ -8,17 +8,17 @@
         return parseInt(km) * meter;
           }
        
-} */
+} 
 
 /*   var result =kilometerToMeter(-2)
-  var result1 =kilometerToMeter('rt5215tr')
-  var result2 =kilometerToMeter(2)
+     var result1 =kilometerToMeter('rt5215tr')
+     var result2 =kilometerToMeter(2)
  */
  //console.log(result,result1,result2)
 
 
-// budgetCalculator
-/*   function budgetCalculator(a,b,c){
+// problem 2 ----------------------------------------------------------------
+  function budgetCalculator(a,b,c){
       var watch = 50;
       var mobile =100;
       var laptop =500;
@@ -30,13 +30,13 @@
            return total;
       }
      
-  } */
+  } 
 /* console.log(budgetCalculator(3,3,3)) */
 /* console.log(budgetCalculator("df21",3,3)) */
 
-// hotelCose 
+// problem 3 -------------------------------------------------------------------
 
-/* function hotelCost(stayDays){
+ function hotelCost(stayDays){
     var discount =.20, fewDays
      
     if(stayDays < 0 || stayDays ==" "){// filtering unnessassary input
@@ -59,7 +59,7 @@
     }
     
        
-} */
+} 
 /*  console.log(hotelCost(8)) 
 console.log(hotelCost(11)) 
 console.log(hotelCost(21)) 
@@ -67,21 +67,26 @@ console.log(hotelCost(-21))
 console.log(hotelCost('dfdre'))  
 console.log(hotelCost(' '))   */
 
-// 
+// problem 4 --------------------------------------------------------------------
 
- function megaFriend(str){ 
+  var names = ["Rahi", "Alikomol", "Muntaha", "Abu", "Hasan","Rumel"];
 
- var longest =words[0]
- var words = str.split(" ");
- //var words= str.split(" ")
-  for (var i = 0; i <words.length; i++) {
-    var findLong =words[i]
-    if (findLong.length >longest.length) {
-      longest= findLong;
-    } 
+
+ function megaFriend(arr){
+   var size = names.length;
+   var longestName = names[0];
+
+  for(var i = 0; i <names.length; i++){
+      if(names[i].length> longestName.length){
+         longestName = names[i];   
+      }
+     
   }
- return longest;
 
-}
-//var friends =['abu','sayeed','answary','mark','joe Biden','kamal uddin mulla','burhan'];
-console.log(megaFriend(['abu','sayeed','answary','mark','joe Biden','kamal uddin mulla','burhan']))
+    return ('largest name of my friend is :'+ longestName);
+
+ }
+
+ /* var result =megaFriend(names)
+ console.log(result)
+ */
